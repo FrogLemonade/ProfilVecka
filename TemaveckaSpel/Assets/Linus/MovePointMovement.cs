@@ -15,7 +15,7 @@ public class MovePointMovement : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.A))
         {
-            transform.position = new Vector3(4, 0, 0);
+            transform.position = new Vector3(5, 0, 0);
             transform.localScale = new Vector3(0.5f,0.5f,1);
         }
         if(Input.GetKeyDown(KeyCode.D))

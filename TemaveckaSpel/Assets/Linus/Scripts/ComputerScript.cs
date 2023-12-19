@@ -10,6 +10,8 @@ public class ComputerScript : MonoBehaviour
 {
     public GameObject Computer;
     public GameObject MovePoint;
+    public GameObject TerminalInputWindow;
+    public GameObject TerminalInputWindow1;
     public float moveSpeed;
     public float Duration;
     public float elapsedTime;
@@ -31,6 +33,7 @@ public class ComputerScript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.D))
         {
             elapsedTime = 0;
+            
         }
         if(Input.GetKeyDown(KeyCode.A))
         {
@@ -42,7 +45,16 @@ public class ComputerScript : MonoBehaviour
 
         Computer.transform.localScale = Vector3.Lerp(Computer.transform.localScale, MovePoint.transform.localScale, percentageComplete);
 
-        
+        if(Computer.transform.position == new Vector3(0,0,0))
+        {
+            TerminalInputWindow.SetActive(true);
+            TerminalInputWindow1.SetActive(true);
+        }
+        else
+        {
+            TerminalInputWindow.SetActive(false);
+            TerminalInputWindow1.SetActive(false);
+        }
 
     }
     
