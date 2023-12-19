@@ -8,12 +8,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Dator
   - Water
   - UI
   - 
-  - 
-  - 
+  - Text
+  - Computer
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Computer
+    uniqueID: 1653291993
+    locked: 0
+  - name: UI Terminal
+    uniqueID: 3750816153
     locked: 0
