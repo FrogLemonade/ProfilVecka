@@ -22,8 +22,9 @@ public class MoveToObject : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            elapsedTime = 1;
+            elapsedTime = 0;
         }
+
 
         float percentageComplete = elapsedTime / Duration;
 
