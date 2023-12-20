@@ -14,14 +14,14 @@ public class MoveTo : MonoBehaviour
             PaperInput = true;
             transform.position = new Vector2(0, 0);
 
-            transform.localScale = new Vector3 (13, 13, 1);
+            transform.localScale = new Vector3 (8, 8, 1);
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
             PaperInput = false;
             transform.position = new Vector2(-8, -4);
 
-            transform.localScale = new Vector3(3, 3, 1);
+            transform.localScale = new Vector3(2, 2, 1);
         }
         if(PaperInput)
         {

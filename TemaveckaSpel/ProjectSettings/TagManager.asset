@@ -47,3 +47,9 @@ TagManager:
   - name: UI Terminal
     uniqueID: 3750816153
     locked: 0
+  - name: Paper
+    uniqueID: 641401427
+    locked: 0
+  - name: Paper UI
+    uniqueID: 2050901591
+    locked: 0
