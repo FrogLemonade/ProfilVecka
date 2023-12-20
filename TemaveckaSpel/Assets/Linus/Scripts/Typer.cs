@@ -9,7 +9,8 @@ public class WritingScript : MonoBehaviour
     public Text wordOutput = null;
 
     private string remainingword = string.Empty;
-    private string currentword = "confirm";
+    private string currentword = "switch";
+    public int activeMonster = 1;
     private void Start()
     {
         SetCurrentWord();
@@ -31,6 +32,10 @@ public class WritingScript : MonoBehaviour
     private void Update()
     {
         Checkinput();
+        if(activeMonster >6)
+        {
+            activeMonster = 1;
+        }
     }
 
     private void Checkinput()
@@ -54,6 +59,7 @@ public class WritingScript : MonoBehaviour
 
             if (IsWordComplete())
             {
+                activeMonster += 1;
                 SetCurrentWord();
             }
         }
@@ -73,6 +79,8 @@ public class WritingScript : MonoBehaviour
 
     private bool IsWordComplete()
     {
-        return remainingword.Length == 0; 
+       
+        return remainingword.Length == 0;
+        
     }
 }
