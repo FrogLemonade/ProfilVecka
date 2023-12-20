@@ -16,11 +16,18 @@ public class ComputerScript : MonoBehaviour
     public float Duration;
     public float elapsedTime;
     private Vector3 startpos;
-    
+    public AudioSource ComputerSound;
+    public AudioClip StartSoundClip;
+    public AudioClip EndSoundClip;
+    public Sprite ComputerOn;
+    public Sprite ComputerOff;
+    SpriteRenderer srenderer;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        srenderer = GetComponent<SpriteRenderer>();
+        Debug.Log(srenderer);
     }
 
     // Update is called once per frame
@@ -37,7 +44,7 @@ public class ComputerScript : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.A))
         {
-            elapsedTime = 1;
+            elapsedTime =0;
         }
         
         float percentageComplete = elapsedTime / Duration;
@@ -49,11 +56,16 @@ public class ComputerScript : MonoBehaviour
         {
             TerminalInputWindow.SetActive(true);
             TerminalInputWindow1.SetActive(true);
+        //    ComputerSound.PlayOneShot(StartSoundClip);
+            srenderer.sprite = ComputerOn;
+            
         }
         else
         {
             TerminalInputWindow.SetActive(false);
             TerminalInputWindow1.SetActive(false);
+          //  ComputerSound.PlayOneShot(EndSoundClip);
+            srenderer.sprite = ComputerOff;
         }
 
     }

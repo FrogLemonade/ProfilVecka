@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6f8fea10fc94845439c7c82a9b125729
+guid: 129c53e5d72b42c46957a7b16bb1e6e3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Monster_3_0
+      name: dator 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9479404693a61494da1c60c16156568a
-      internalID: 775851499
+      spriteID: 78306deec8b935643a11e7dd39d26642
+      internalID: 2099845819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster_3_1
+      name: dator 1_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 512
         y: 0
-        width: 128
-        height: 128
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b6282cc8189c5b4ca35cd9faa134637
-      internalID: -2101475190
+      spriteID: e56ad409cf26cf84d90186c6ba85fec6
+      internalID: 683531912
       vertices: []
       indices: 
       edges: []
@@ -162,8 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Monster_3_0: 775851499
-      Monster_3_1: -2101475190
+      dator 1_0: 2099845819
+      dator 1_1: 683531912
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
